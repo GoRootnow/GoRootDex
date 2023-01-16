@@ -27,7 +27,7 @@ tasks.named('test') {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'rootdex.RootDexApplication.java'
+                'Main-Class': 'com.root.rootdex.RootDexApplication.java'
         )
     }
 }
