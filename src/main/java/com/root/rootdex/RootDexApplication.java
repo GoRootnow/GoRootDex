@@ -12,12 +12,16 @@ public class RootDexApplication {
     public static void main(String[] args) {
         //SpringApplication.run(RootDexApplication.class, args);
 
+        // to do: Put this code on BinaryTree class
 
+        Node node = new Node();
+        List<Integer> valuelist=new ArrayList<Integer>();
 
-        valuelist.add(6);
-        valuelist.add(5);
-        valuelist.add(4);
-        valuelist.add(7);
+        // Filling the List
+        for(int i = 0; i < 5 ; i++){
+            valuelist.add(ThreadLocalRandom.current().nextInt(1, 10 + 1));
+        }
+
 
         // Filling the tree
         for(Integer value :valuelist){
