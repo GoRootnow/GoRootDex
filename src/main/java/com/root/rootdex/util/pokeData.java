@@ -12,6 +12,7 @@ import java.time.Instant;
 
 public class pokeData {
 
+    /*
     public static PokemonDto pikachu = new PokemonDto(25,"Pikachu", ELECTRIC,null);
     PokemonDto bulbasaur = new PokemonDto(01,"Bulbasaur", GRASS,null);
     PokemonDto charmander = new PokemonDto(04,"Charmander", FIRE,null);
@@ -21,5 +22,5 @@ public class pokeData {
             1 , 151 );
     PokedexCatch tracker = new PokedexCatch(pikachu,pokemonRed, 25,true, Instant.now());
 
-
+*/
 }

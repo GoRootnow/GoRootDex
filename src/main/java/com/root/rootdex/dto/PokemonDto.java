@@ -1,24 +1,31 @@
 package com.root.rootdex.dto;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.Value;
 
-@Setter
-@Getter
+
+
 public class PokemonDto {
+     Integer id;
+     String name;
 
+     public Integer getId() {
+          return id;
+     }
 
-    int pokedexNumber;
-    String name;
-    ElementDto type1;
-    ElementDto type2;
+     public String getName() {
+          return name;
+     }
 
-    public PokemonDto(int pokedexNumber, String name,
-                      ElementDto type1, ElementDto type2) {
-        this.pokedexNumber = pokedexNumber;
-        this.name = name;
-        this.type1 = type1;
-        this.type2 = type2;
-    }
+     public void setName(String name) {
+          this.name = name;
+     }
+
+     public void setId(Integer id) {
+          this.id = id;
+     }
 }

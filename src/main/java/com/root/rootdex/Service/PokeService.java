@@ -1,10 +1,17 @@
 package com.root.rootdex.Service;
 
-public class RootService {
+import com.root.rootdex.dto.PokemonDto;
+import com.root.rootdex.entity.PokemonEntity;
+import java.util.Optional;
 
+public interface PokeService {
+
+    PokemonDto findPokemonById(Integer id);
+
+    /*
     private String name;
 
-    public RootService(String name){
+    public PokeService(String name){
         this.name=name;
     }
 
@@ -20,4 +27,6 @@ public class RootService {
 
     // String Builder
     // String Buffer
+    */
+
 }
