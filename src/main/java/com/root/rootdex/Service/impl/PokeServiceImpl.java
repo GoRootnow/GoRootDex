@@ -8,10 +8,12 @@ import com.root.rootdex.mapper.PokemonDtoMapper;
 import com.root.rootdex.mapper.PokemonEntityMapper;
 import java.util.Optional;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Slf4j
 public class PokeServiceImpl implements PokeService {
 
+    @Autowired
     private final PokemonRepository pokemonRepository;
 
     public PokeServiceImpl(PokemonRepository pokemonRepository){
@@ -22,6 +24,7 @@ public class PokeServiceImpl implements PokeService {
     @Override
     public PokemonDto findPokemonById(Integer id) {
         PokemonEntity pokemon = pokemonRepository.findAllById(id);
+
         //log.info("pokemonEntity: {}", pokemon.getName());
 
         PokemonDto pokemonDto = PokemonEntityMapper.MAPPER.map(pokemon);

@@ -8,11 +8,11 @@ import lombok.Setter;
 @Getter
 public class GameDto {
 
-    int id;
-    String name;
-    Instant releaseDate;
-    int generation;
-    int numberOfPokemon;
+    private int id;
+    private String name;
+    private Instant releaseDate;
+    private int generation;
+    private int numberOfPokemon;
 
     public GameDto(int id, String name, Instant releaseDate,
                    int generation, int numberOfPokemon) {

@@ -28,8 +28,12 @@ public class Controller {
     @GetMapping("/search/{id}")
     public ResponseEntity<PokemonResponse> getPokeName(@PathVariable Integer id){
 
+        if(id<1){
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
         PokemonDto pokemonDto = pokeService.findPokemonById(id);
         PokemonResponse pokemonResponse = PokemonDtoMapper.MAPPER.map(pokemonDto);
+        if (pokemonResponse.getId()==null)return new ResponseEntity(HttpStatus.NOT_FOUND);
         return new ResponseEntity(pokemonResponse, HttpStatus.OK);
     }
 }

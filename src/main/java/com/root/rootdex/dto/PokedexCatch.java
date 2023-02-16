@@ -8,11 +8,11 @@ import lombok.Setter;
 @Getter
 public class PokedexCatch {
 
-    PokemonDto pokemon;
-    GameDto game;
-    int pokedexNumber;
-    boolean isCaught;
-    Instant caughtDate;
+    private PokemonDto pokemon;
+    private GameDto game;
+    private int pokedexNumber;
+    private boolean isCaught;
+    private Instant caughtDate;
 
     public PokedexCatch(PokemonDto pokemon, GameDto game,
                         int pokedexNumber, boolean isCaught, Instant caughtDate) {

@@ -6,4 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PokemonRepository extends JpaRepository<PokemonEntity, Integer> {
     PokemonEntity findAllById(Integer id);
+    // native sql or criteriaSql personalized
+    // patron regular
 }

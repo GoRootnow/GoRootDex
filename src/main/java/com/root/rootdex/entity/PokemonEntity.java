@@ -21,10 +21,10 @@ public class PokemonEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
-     Integer id;
+    private Integer id;
 
     @Column(name = "name")
-     String name;
+    private String name;
 
     public Integer getId() {
         return id;
